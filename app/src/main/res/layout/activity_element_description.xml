@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".element.ElementDescriptionActivity">
+
+    <ImageView
+        android:id="@+id/logo_app_asset"
+        android:layout_width="176dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/asset_night" />
+
+    <Button
+        android:id="@+id/button1_assetList_element_description"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_asset_list"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_app_asset" />
+
+    <Button
+        android:id="@+id/button2_elementList_element_description"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/button_element_list"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1_assetList_element_description" />
+
+    <Button
+        android:id="@+id/button_export_element_description"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/button_export"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/yellow_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2_elementList_element_description" />
+
+    <TextView
+        android:id="@+id/element_description_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:text="Oxford/BE/Ext. Window"
+        android:gravity="center"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageSwitcher
+        android:id="@+id/image_camera_element_description"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/button_drop_elements_description"
+        app:layout_constraintStart_toEndOf="@+id/button1_assetList_element_description"
+        app:layout_constraintTop_toBottomOf="@+id/element_description_title" />
+
+    <Button
+        android:id="@+id/button_next_image_element"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:backgroundTint="@color/grey"
+        app:layout_constraintEnd_toStartOf="@+id/button_copy_elements_description"
+        app:layout_constraintTop_toBottomOf="@+id/image_camera_element_description" />
+
+    <Button
+        android:id="@+id/button_back_image_element"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:backgroundTint="@color/grey"
+        app:layout_constraintStart_toEndOf="@+id/button2_elementList_element_description"
+        app:layout_constraintTop_toBottomOf="@+id/image_camera_element_description" />
+
+
+    <TextView
+        android:id="@+id/element_uniformat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Uniformat"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/button_new_elements_description"
+        app:layout_constraintStart_toEndOf="@+id/button_export_element_description"
+        app:layout_constraintTop_toBottomOf="@+id/button_next_image_element" />
+
+    <TextView
+        android:id="@+id/element_year_text_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Year Installed"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/button_new_elements_description"
+        app:layout_constraintStart_toEndOf="@+id/button_export_element_description"
+        app:layout_constraintTop_toBottomOf="@+id/element_uniformat" />
+
+    <TextView
+        android:id="@+id/element_quantity_text_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Quantity"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/button_new_elements_description"
+        app:layout_constraintStart_toEndOf="@+id/button_export_element_description"
+        app:layout_constraintTop_toBottomOf="@+id/element_year_text_description" />
+
+    <TextView
+        android:id="@+id/element_condition_text_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Condition"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/button_new_elements_description"
+        app:layout_constraintStart_toEndOf="@+id/button_export_element_description"
+        app:layout_constraintTop_toBottomOf="@+id/element_quantity_text_description" />
+
+    <Button
+        android:id="@+id/button_drop_elements_description"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="16dp"
+        android:text="Delete"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_edit_elements_description"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="EDIT"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_drop_elements_description" />
+
+    <Button
+        android:id="@+id/button_copy_elements_description"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="COPY"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_edit_elements_description" />
+
+    <Button
+        android:id="@+id/button_new_elements_description"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="NEW"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/blue_button"
+        app:layout_constraintBottom_toTopOf="@+id/button_requirements_description"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_requirements_description"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="80dp"
+        android:text="Requirements"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        app:backgroundTint="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_back_element_description"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="80dp"
+        android:visibility="gone"
+        app:icon="@drawable/ic_baseline_arrow_back_ios_24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        app:backgroundTint="@color/blue_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

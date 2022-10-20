@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".element.ElementTypeActivity">
+
+    <TextView
+        android:id="@+id/element_type_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Element Information"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/button_drop_type_elements"
+        app:layout_constraintStart_toEndOf="@+id/button_assetsList_type"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_size_view_uniformat"
+        style="@style/SpinnerText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Uniformat"
+        app:layout_constraintEnd_toStartOf="@+id/button_drop_type_elements"
+        app:layout_constraintStart_toEndOf="@+id/button_assetsList_type"
+        app:layout_constraintTop_toBottomOf="@+id/element_type_title">
+
+        <AutoCompleteTextView
+            android:id="@+id/autocomplete1_create_uniformat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_regular"
+            android:inputType="none"
+            android:labelFor="@id/autocomplete1_create_uniformat" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_size_view_category"
+        style="@style/SpinnerText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Category"
+        app:layout_constraintEnd_toStartOf="@+id/button_drop_type_elements"
+        app:layout_constraintStart_toEndOf="@+id/button_assetsList_type"
+        app:layout_constraintTop_toBottomOf="@+id/et_size_view_uniformat">
+
+        <AutoCompleteTextView
+            android:id="@+id/autocomplete1_create_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_regular"
+            android:inputType="none"
+            android:labelFor="@id/autocomplete1_create_category" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_size_view_type"
+        style="@style/SpinnerText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Type"
+        app:layout_constraintEnd_toStartOf="@+id/button_drop_type_elements"
+        app:layout_constraintStart_toEndOf="@+id/button_assetsList_type"
+        app:layout_constraintTop_toBottomOf="@+id/et_size_view_category">
+
+        <AutoCompleteTextView
+            android:id="@+id/autocomplete1_create_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_regular"
+            android:inputType="none"
+            android:labelFor="@id/autocomplete1_create_category" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_when_view"
+        style="@style/PrimaryEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:focusable="true"
+        android:hint="Year"
+        app:endIconDrawable="@drawable/ic_baseline_calendar"
+        app:endIconMode="custom"
+        app:layout_constraintEnd_toStartOf="@+id/button_drop_type_elements"
+        app:layout_constraintStart_toEndOf="@+id/button_elementList_type"
+        app:layout_constraintTop_toBottomOf="@+id/et_size_view_type">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/date_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_regular"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_quantity_view"
+        style="@style/PrimaryEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Quantity"
+        app:layout_constraintEnd_toStartOf="@+id/button_drop_type_elements"
+        app:layout_constraintStart_toEndOf="@+id/button_elementList_type"
+        app:layout_constraintTop_toBottomOf="@+id/et_when_view">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/element_quantity_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_regular"
+            android:inputType="numberDecimal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_size_view_unity"
+        style="@style/SpinnerText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Unity"
+        app:layout_constraintEnd_toStartOf="@+id/button_drop_type_elements"
+        app:layout_constraintStart_toEndOf="@+id/button_elementList_type"
+        app:layout_constraintTop_toBottomOf="@+id/et_quantity_view">
+
+        <AutoCompleteTextView
+            android:id="@+id/autocomplete1_create_unity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_regular"
+            android:inputType="none"
+            android:labelFor="@id/autocomplete1_create_unity" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_size_view_condition"
+        style="@style/SpinnerText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Condition"
+        app:layout_constraintEnd_toStartOf="@+id/button_drop_type_elements"
+        app:layout_constraintStart_toEndOf="@+id/button_elementList_type"
+        app:layout_constraintTop_toBottomOf="@+id/et_size_view_unity">
+
+        <AutoCompleteTextView
+            android:id="@+id/autocomplete1_create_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_regular"
+            android:inputType="none"
+            android:labelFor="@id/autocomplete1_create_condition" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/logo_app_element"
+        android:layout_width="176dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/asset_night" />
+
+    <Button
+        android:id="@+id/button_assetsList_type"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_asset_list"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_app_element" />
+
+    <Button
+        android:id="@+id/button_elementList_type"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/button_element_list"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_assetsList_type" />
+
+    <Button
+        android:id="@+id/button_drop_type_elements"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="16dp"
+        android:text="Delete"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_up_type_elements"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="UP"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_drop_type_elements" />
+
+    <Button
+        android:id="@+id/button_down_type_elements"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="DOWN"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_up_type_elements" />
+
+    <Button
+        android:id="@+id/button_select_type_elements"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="SELECT"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/blue_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_down_type_elements" />
+
+    <Button
+        android:id="@+id/button_next_type_elements"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="80dp"
+        app:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        app:backgroundTint="@color/blue_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_back_type_elements"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="80dp"
+        app:icon="@drawable/ic_baseline_arrow_back_ios_24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        app:backgroundTint="@color/blue_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

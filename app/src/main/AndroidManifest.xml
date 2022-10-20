@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.ram.buildingcolletor">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BuildingColletor">
+        <activity android:name=".requirement.edit.EditRequirementViewActivity"></activity>
+        <activity android:name=".requirement.RequirementNewActivity" />
+        <activity android:name=".requirement.RequirementViewActivity" />
+        <activity android:name=".requirement.RequirementsListActivity" />
+        <activity android:name=".element.edit.EditElementTypeActivity" />
+        <activity android:name=".element.edit.EditElementNameActivity" />
+        <activity android:name=".asset.edit.EditAssetLocationActivity" />
+        <activity android:name=".asset.edit.EditAssetInfoActivity" />
+        <activity android:name=".asset.edit.EditAssetDetailsActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCjbcKCZgN-jBmuiW8FVZHg7MzLlCkQKRM" />
+
+        <activity android:name=".element.ElementDescriptionActivity" />
+        <activity android:name=".requirement.RequirementsActivity" />
+        <activity
+            android:name=".element.ElementTypeActivity"
+            android:configChanges="orientation|screenLayout" />
+        <activity android:name=".element.ElementNameActivity" />
+        <activity android:name=".element.ElementsPhotoActivity" />
+        <activity android:name=".element.ElementsActivity" />
+        <activity android:name=".asset.AssetDescriptionActivity" />
+        <activity android:name=".asset.AssetsDetailsActivity" />
+        <activity android:name=".asset.AssetsPhotoActivity" />
+        <activity android:name=".asset.AssetsInfoActivity" />
+        <activity android:name=".asset.AssetsLocationActivity" />
+        <activity android:name=".asset.AssetsActivity" />
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

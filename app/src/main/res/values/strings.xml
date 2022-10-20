@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">BuildingColletor</string>
+    <string name="text_asset_empty">No Asset Yet!</string>
+    <string name="text_description_asset_empty">After your first asset you will be able to view it here</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_save_asset">SAVE ASSET</string>
+    <string name="text_take_picture">Take Image</string>
+    <string name="text_drop_picture">Delete Image</string>
+    <string name="text_next_view">Next</string>
+    <string name="text_upload_picture">Take Image</string>
+    <string name="text_button_next">Next</string>
+    <string name="text_button_back">Back</string>
+    <string name="button_new_asset">New</string>
+    <string name="button_asset_list">Assets List</string>
+    <string name="button_element_list">Elements List</string>
+    <string name="button_export">Export</string>
+
+    <!--Add Area Type-->
+    <string-array name="area_types">
+        <item>SM</item>
+        <item>SF</item>
+    </string-array>
+
+    <string-array name="uniformat">
+        <item>Structure</item>
+        <item>Building Enclosure</item>
+        <item>Interior Finishing</item>
+        <item>Conveying</item>
+        <item>Plumbing</item>
+        <item>HVAC</item>
+        <item>Fire Protection</item>
+        <item>Electrical</item>
+        <item>Security</item>
+        <item>Site Components</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>Arch</item>
+        <item>Mech</item>
+        <item>Electric</item>
+        <item>Site Development</item>
+    </string-array>
+
+    <string-array name="element_type_arch">
+        <item>Foundations</item>
+        <item>Suspended Slab</item>
+        <item>Slab on Grade</item>
+        <item>Floor Construction</item>
+        <item>Roof Construction</item>
+        <item>Exterior Walls</item>
+        <item>Exterior Windows</item>
+        <item>Exterior Doors</item>
+        <item>Roof Coverings</item>
+        <item>Roof Openings</item>
+        <item>Partitions</item>
+        <item>Interior Doors</item>
+        <item>Fittings</item>
+        <item>Stair Construction</item>
+        <item>Stair Finishes</item>
+        <item>Wall Finishes</item>
+        <item>Floor Finishes</item>
+        <item>Celling Finishes</item>
+    </string-array>
+
+    <string-array name="element_type_mech">
+        <item>Elevators &amp; Lifts</item>
+        <item>Escalators &amp; Moving Walks</item>
+        <item>Other Conveying Systems</item>
+        <item>Plumbing Fixtures</item>
+        <item>Domestic Water Distribution</item>
+        <item>Sanitary Waste</item>
+        <item>Rain Water Drainage</item>
+        <item>Other Plumbing Systems</item>
+        <item>Energy Supply</item>
+        <item>Heat Generating Systems</item>
+        <item>Cooling Generating Systems</item>
+        <item>Distribution Systems</item>
+        <item>Terminal &amp; Package Units</item>
+        <item>Controls &amp; Instrumentation</item>
+        <item>Sprinklers</item>
+        <item>Standpipes</item>
+        <item>Fire Protection Specialities</item>
+        <item>Others Fire Protection Systems</item>
+    </string-array>
+
+    <string-array name="element_type_eletric">
+        <item>Electrical Service &amp; Distribution</item>
+        <item>Lighting and Branch Wiring</item>
+        <item>Communications &amp; Security</item>
+    </string-array>
+
+    <string-array name="element_type_site">
+        <item>Site Fixtures</item>
+        <item>Site Soft Landscape</item>
+        <item>Site Hard Landscape</item>
+    </string-array>
+
+    <string-array name="unity">
+        <item>m²</item>
+        <item>p²</item>
+    </string-array>
+
+    <string-array name="condition">
+        <item>Excelent</item>
+        <item>Good</item>
+        <item>Fair</item>
+        <item>Poor</item>
+        <item>Unknown</item>
+    </string-array>
+
+    <string-array name="requirements">
+        <item>Replacement</item>
+        <item>Repair</item>
+        <item>Study</item>
+        <item>Decommission</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".asset.edit.EditAssetInfoActivity">
+
+    <TextView
+        android:id="@+id/asset_info_text_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:text="Asset Information"
+        android:gravity="center"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/asset_info_details_text_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:text="Please, fill these blank fields"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toStartOf="@+id/button_drop_info_assets_edit"
+        app:layout_constraintStart_toEndOf="@+id/logo_app_asset_edit"
+        app:layout_constraintTop_toBottomOf="@+id/asset_info_text_edit" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_title_view_edit"
+        style="@style/PrimaryEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Asset Name"
+        app:layout_constraintEnd_toStartOf="@+id/button_drop_info_assets_edit"
+        app:layout_constraintStart_toEndOf="@+id/button1_info_assets_edit"
+        app:layout_constraintTop_toBottomOf="@+id/asset_info_details_text_edit">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/asset_name_info_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_regular"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/area_title_info_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="Area"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/button_name_info_assets_edit"
+        app:layout_constraintStart_toEndOf="@+id/button1_info_assets_edit"
+        app:layout_constraintTop_toBottomOf="@+id/et_title_view_edit" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_title_view2_edit"
+        style="@style/PrimaryEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Size"
+        app:layout_constraintEnd_toStartOf="@+id/button_drop_info_assets_edit"
+        app:layout_constraintStart_toEndOf="@+id/button1_info_assets_edit"
+        app:layout_constraintTop_toBottomOf="@+id/area_title_info_edit">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/asset_area_info_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_regular"
+            android:inputType="numberDecimal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_size_view_edit"
+        style="@style/SpinnerText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Area Type"
+        android:focusableInTouchMode="false"
+        app:layout_constraintEnd_toStartOf="@+id/button_size_info_assets_edit"
+        app:layout_constraintStart_toEndOf="@+id/button1_info_assets_edit"
+        app:layout_constraintTop_toBottomOf="@+id/et_title_view2_edit">
+
+        <AutoCompleteTextView
+            android:id="@+id/autocomplete1_info_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_regular"
+            android:inputType="none"
+            android:labelFor="@id/autocomplete1_info" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/logo_app_asset_edit"
+        android:layout_width="176dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/asset_night" />
+
+    <Button
+        android:id="@+id/button1_info_assets_edit"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_asset_list"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_app_asset_edit" />
+
+    <Button
+        android:id="@+id/button2_info_assets_edit"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:visibility="gone"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/button_element_list"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1_info_assets_edit" />
+
+    <Button
+        android:id="@+id/button_drop_info_assets_edit"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="16dp"
+        android:text="Delete"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_name_info_assets_edit"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Name"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_drop_info_assets_edit" />
+
+    <Button
+        android:id="@+id/button_size_info_assets_edit"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Size"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_name_info_assets_edit" />
+
+    <Button
+        android:id="@+id/button_unit_info_assets_edit"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Unit"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/blue_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_size_info_assets_edit" />
+
+    <Button
+        android:id="@+id/button_next_info_assets_edit"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="80dp"
+        app:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        app:backgroundTint="@color/blue_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

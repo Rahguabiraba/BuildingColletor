@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".element.edit.EditElementNameActivity">
+
+    <TextView
+        android:id="@+id/element_info_text_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:text="Element Name"
+        android:gravity="center"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/element_info_details_text_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:text="Please, put a name in this element"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toStartOf="@+id/button_drop_info_elements_edit"
+        app:layout_constraintStart_toEndOf="@+id/button1_info_elements_edit"
+        app:layout_constraintTop_toBottomOf="@+id/element_info_text_edit" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_title_view_element_edit"
+        style="@style/PrimaryEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Element Name"
+        app:layout_constraintEnd_toStartOf="@+id/button_drop_info_elements_edit"
+        app:layout_constraintStart_toEndOf="@+id/button1_info_elements_edit"
+        app:layout_constraintTop_toBottomOf="@+id/element_info_details_text_edit">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/element_name_info_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_regular"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/logo_app_element_edit"
+        android:layout_width="176dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/asset_night" />
+
+    <Button
+        android:id="@+id/button1_info_elements_edit"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_asset_list"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_app_element_edit" />
+
+    <Button
+        android:id="@+id/button2_info_elements_edit"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/button_element_list"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1_info_elements_edit" />
+
+    <Button
+        android:id="@+id/button_drop_info_elements_edit"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="16dp"
+        android:text="Delete"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_up_info_elements_edit"
+        android:visibility="gone"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="UP"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_drop_info_elements_edit" />
+
+    <Button
+        android:id="@+id/button_down_info_elements_edit"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"
+        android:text="DOWN"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_up_info_elements_edit" />
+
+    <Button
+        android:id="@+id/button_select_info_elements_edit"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"
+        android:text="SELECT"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/blue_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_down_info_elements_edit" />
+
+    <Button
+        android:id="@+id/button_next_info_elements_edit"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="80dp"
+        app:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        app:backgroundTint="@color/blue_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

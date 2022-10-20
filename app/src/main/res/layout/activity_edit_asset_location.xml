@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".asset.edit.EditAssetLocationActivity">
+
+    <ImageView
+        android:id="@+id/logo_app_asset"
+        android:layout_width="176dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/asset_night" />
+
+    <Button
+        android:id="@+id/button1_location_assets_edit"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_asset_list"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_app_asset" />
+
+    <Button
+        android:id="@+id/button2_location_assets_edit"
+        android:visibility="gone"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/button_element_list"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1_location_assets_edit" />
+
+    <TextView
+        android:id="@+id/asset_location_text_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:text="Asset Location"
+        android:gravity="center"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/asset_location_details_text_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:text="Get Current Location"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toStartOf="@+id/button_drop_location_assets_edit"
+        app:layout_constraintStart_toEndOf="@+id/logo_app_asset"
+        app:layout_constraintTop_toBottomOf="@+id/asset_location_text_edit" />
+
+
+    <Button
+        android:id="@+id/button_drop_location_assets_edit"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Delete Location"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/asset_location_details_text_edit" />
+
+    <Button
+        android:id="@+id/button_adress_location_assets_edit"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"
+        android:text="Adress"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_drop_location_assets_edit" />
+
+    <Button
+        android:id="@+id/button_current_location_assets_edit"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Current Location"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_adress_location_assets_edit" />
+
+    <Button
+        android:id="@+id/button_next_location_edit"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="80dp"
+        app:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        app:backgroundTint="@color/blue_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_back_location_edit"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="80dp"
+        app:icon="@drawable/ic_baseline_arrow_back_ios_24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        app:backgroundTint="@color/blue_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/address_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/button_drop_location_assets_edit"
+        app:layout_constraintStart_toEndOf="@+id/button1_location_assets_edit"
+        app:layout_constraintTop_toBottomOf="@+id/asset_location_details_text_edit" />
+
+    <fragment
+        android:id="@+id/google_map_edit"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_current_location_assets_edit"
+        app:layout_constraintStart_toEndOf="@+id/button1_location_assets_edit"
+        app:layout_constraintTop_toBottomOf="@+id/address_edit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
